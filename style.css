@@ -1,0 +1,88 @@
+.stMainBlockContainer {
+  max-width: 49rem;
+  padding-top: clamp(4.25rem, 10vw, 7.75rem);
+}
+
+.stMainBlockContainer h1 {
+  border-top: 2px solid #116451;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  padding: 1.25rem 0 0.1rem;
+}
+
+.st-key-examples button {
+  background: transparent;
+  min-height: 44px;
+  font-weight: 600;
+}
+
+[data-testid="stChatMessage"] [data-testid="stText"] {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.conversion {
+  background: #143A30;
+  border-radius: 0.85rem;
+  color: #F5F8EE;
+  font-variant-numeric: tabular-nums;
+  padding: clamp(1rem, 3vw, 1.75rem);
+}
+
+.conversion-from,
+.conversion dt {
+  color: #C1D8CA;
+}
+
+.conversion-to {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.65rem;
+  line-height: 1.12;
+  margin: 0.25rem 0 1.05rem;
+}
+
+.conversion-to strong {
+  font-size: clamp(1.6rem, 5vw, 3.25rem);
+  letter-spacing: -0.035em;
+  overflow-wrap: anywhere;
+}
+
+.conversion-to span {
+  color: #CCE9B4;
+  font-size: 1.1rem;
+  font-weight: 650;
+}
+
+.conversion dl {
+  border-top: 1px solid #56776A;
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding-top: 0.85rem;
+}
+
+.conversion dl div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.15rem 1rem;
+}
+
+.conversion dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+::selection {
+  background: #CDE8B5;
+  color: #172820;
+}
+
+@media (max-width: 480px) {
+  .stMainBlockContainer {
+    padding-top: 4.5rem;
+  }
+}
